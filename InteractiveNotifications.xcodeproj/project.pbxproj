@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D987412D214761D400CB366D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987412C214761D400CB366D /* InterfaceController.swift */; };
+		D987412F214761D400CB366D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987412E214761D400CB366D /* ExtensionDelegate.swift */; };
+		D9874131214761D400CB366D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9874130214761D400CB366D /* NotificationController.swift */; };
+		D9874133214761D500CB366D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9874132214761D500CB366D /* Assets.xcassets */; };
+		D9874147214761FF00CB366D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9874145214761FF00CB366D /* Interface.storyboard */; };
+		D98741492147620000CB366D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98741482147620000CB366D /* Assets.xcassets */; };
+		D98741502147620000CB366D /* RichNotificationWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D98741552147620000CB366D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98741542147620000CB366D /* InterfaceController.swift */; };
+		D98741572147620000CB366D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98741562147620000CB366D /* ExtensionDelegate.swift */; };
+		D98741592147620000CB366D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98741582147620000CB366D /* NotificationController.swift */; };
+		D987415B2147620000CB366D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D987415A2147620000CB366D /* Assets.xcassets */; };
+		D98741602147620000CB366D /* RichNotificationWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9874143214761FF00CB366D /* RichNotificationWatchApp.app */; };
+		D98741682147623100CB366D /* laser.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D994088621475DDD007A2A73 /* laser.mp4 */; };
 		D994084021456362007A2A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D994083F21456362007A2A73 /* AppDelegate.swift */; };
 		D994084221456362007A2A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D994084121456362007A2A73 /* ViewController.swift */; };
 		D994084521456362007A2A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D994084321456362007A2A73 /* Main.storyboard */; };
@@ -19,9 +32,32 @@
 		D99408642145720D007A2A73 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99408622145720D007A2A73 /* MainInterface.storyboard */; };
 		D99408682145720D007A2A73 /* SuperNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D99408592145720D007A2A73 /* SuperNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D994086E2147538C007A2A73 /* ViewController+NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D994086D2147538C007A2A73 /* ViewController+NotificationDelegate.swift */; };
+		D994087521475A3D007A2A73 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D994085B2145720D007A2A73 /* UserNotifications.framework */; };
+		D994087621475A3D007A2A73 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D994085D2145720D007A2A73 /* UserNotificationsUI.framework */; };
+		D994087921475A3E007A2A73 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D994087821475A3E007A2A73 /* NotificationViewController.swift */; };
+		D994087C21475A3E007A2A73 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D994087A21475A3E007A2A73 /* MainInterface.storyboard */; };
+		D994088021475A3E007A2A73 /* RichNotificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D994087421475A3D007A2A73 /* RichNotificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D994088421475BE6007A2A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D994084621456364007A2A73 /* Assets.xcassets */; };
+		D994088521475BE7007A2A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D994084621456364007A2A73 /* Assets.xcassets */; };
+		D994088721475DDD007A2A73 /* laser.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D994088621475DDD007A2A73 /* laser.mp4 */; };
+		D994088821475DDD007A2A73 /* laser.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D994088621475DDD007A2A73 /* laser.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D98741512147620000CB366D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D994083421456362007A2A73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D987414E2147620000CB366D;
+			remoteInfo = "RichNotificationWatchApp Extension";
+		};
+		D987415E2147620000CB366D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D994083421456362007A2A73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9874142214761FF00CB366D;
+			remoteInfo = RichNotificationWatchApp;
+		};
 		D99408662145720D007A2A73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D994083421456362007A2A73 /* Project object */;
@@ -29,9 +65,38 @@
 			remoteGlobalIDString = D99408582145720D007A2A73;
 			remoteInfo = SuperNotificationExtension;
 		};
+		D994087E21475A3E007A2A73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D994083421456362007A2A73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D994087321475A3D007A2A73;
+			remoteInfo = RichNotificationExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D9874140214761D500CB366D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D98741602147620000CB366D /* RichNotificationWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98741642147620000CB366D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D98741502147620000CB366D /* RichNotificationWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D994086C2145720D007A2A73 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,6 +104,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				D99408682145720D007A2A73 /* SuperNotificationExtension.appex in Embed App Extensions */,
+				D994088021475A3E007A2A73 /* RichNotificationExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +112,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D9874127214761D400CB366D /* RichNotificationApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RichNotificationApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D987412C214761D400CB366D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D987412E214761D400CB366D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D9874130214761D400CB366D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D9874132214761D500CB366D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9874134214761D500CB366D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9874135214761D500CB366D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D9874143214761FF00CB366D /* RichNotificationWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichNotificationWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9874146214761FF00CB366D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D98741482147620000CB366D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D987414A2147620000CB366D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RichNotificationWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98741542147620000CB366D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D98741562147620000CB366D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D98741582147620000CB366D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D987415A2147620000CB366D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D987415C2147620000CB366D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D987415D2147620000CB366D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		D994083C21456362007A2A73 /* InteractiveNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D994083F21456362007A2A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D994084121456362007A2A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,9 +145,28 @@
 		D99408632145720D007A2A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		D99408652145720D007A2A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D994086D2147538C007A2A73 /* ViewController+NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+NotificationDelegate.swift"; sourceTree = "<group>"; };
+		D994087421475A3D007A2A73 /* RichNotificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RichNotificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D994087821475A3E007A2A73 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		D994087B21475A3E007A2A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D994087D21475A3E007A2A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D994088621475DDD007A2A73 /* laser.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = laser.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D9874124214761D400CB366D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D987414C2147620000CB366D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D994083921456362007A2A73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,14 +183,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D994087121475A3D007A2A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D994087621475A3D007A2A73 /* UserNotificationsUI.framework in Frameworks */,
+				D994087521475A3D007A2A73 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D987412B214761D400CB366D /* RichNotificationApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D987412C214761D400CB366D /* InterfaceController.swift */,
+				D987412E214761D400CB366D /* ExtensionDelegate.swift */,
+				D9874130214761D400CB366D /* NotificationController.swift */,
+				D9874132214761D500CB366D /* Assets.xcassets */,
+				D9874134214761D500CB366D /* Info.plist */,
+				D9874135214761D500CB366D /* PushNotificationPayload.apns */,
+			);
+			path = "RichNotificationApp Extension";
+			sourceTree = "<group>";
+		};
+		D9874144214761FF00CB366D /* RichNotificationWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				D9874145214761FF00CB366D /* Interface.storyboard */,
+				D98741482147620000CB366D /* Assets.xcassets */,
+				D987414A2147620000CB366D /* Info.plist */,
+			);
+			path = RichNotificationWatchApp;
+			sourceTree = "<group>";
+		};
+		D98741532147620000CB366D /* RichNotificationWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D98741542147620000CB366D /* InterfaceController.swift */,
+				D98741562147620000CB366D /* ExtensionDelegate.swift */,
+				D98741582147620000CB366D /* NotificationController.swift */,
+				D987415A2147620000CB366D /* Assets.xcassets */,
+				D987415C2147620000CB366D /* Info.plist */,
+				D987415D2147620000CB366D /* PushNotificationPayload.apns */,
+			);
+			path = "RichNotificationWatchApp Extension";
+			sourceTree = "<group>";
+		};
 		D994083321456362007A2A73 = {
 			isa = PBXGroup;
 			children = (
 				D994083E21456362007A2A73 /* InteractiveNotifications */,
 				D994085F2145720D007A2A73 /* SuperNotificationExtension */,
+				D994087721475A3D007A2A73 /* RichNotificationExtension */,
+				D987412B214761D400CB366D /* RichNotificationApp Extension */,
+				D9874144214761FF00CB366D /* RichNotificationWatchApp */,
+				D98741532147620000CB366D /* RichNotificationWatchApp Extension */,
 				D994085A2145720D007A2A73 /* Frameworks */,
 				D994083D21456362007A2A73 /* Products */,
 			);
@@ -98,6 +250,10 @@
 			children = (
 				D994083C21456362007A2A73 /* InteractiveNotifications.app */,
 				D99408592145720D007A2A73 /* SuperNotificationExtension.appex */,
+				D994087421475A3D007A2A73 /* RichNotificationExtension.appex */,
+				D9874127214761D400CB366D /* RichNotificationApp Extension.appex */,
+				D9874143214761FF00CB366D /* RichNotificationWatchApp.app */,
+				D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +293,7 @@
 		D994086F214753A6007A2A73 /* Stuff We Don't Care About */ = {
 			isa = PBXGroup;
 			children = (
+				D994088621475DDD007A2A73 /* laser.mp4 */,
 				D994084621456364007A2A73 /* Assets.xcassets */,
 				D994084821456364007A2A73 /* LaunchScreen.storyboard */,
 				D994085121456418007A2A73 /* UIColor+Hex.swift */,
@@ -144,9 +301,70 @@
 			path = "Stuff We Don't Care About";
 			sourceTree = "<group>";
 		};
+		D994087721475A3D007A2A73 /* RichNotificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D994087821475A3E007A2A73 /* NotificationViewController.swift */,
+				D994087A21475A3E007A2A73 /* MainInterface.storyboard */,
+				D994087D21475A3E007A2A73 /* Info.plist */,
+			);
+			path = RichNotificationExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D9874126214761D400CB366D /* RichNotificationApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D987413D214761D500CB366D /* Build configuration list for PBXNativeTarget "RichNotificationApp Extension" */;
+			buildPhases = (
+				D9874123214761D400CB366D /* Sources */,
+				D9874124214761D400CB366D /* Frameworks */,
+				D9874125214761D400CB366D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RichNotificationApp Extension";
+			productName = "RichNotificationApp Extension";
+			productReference = D9874127214761D400CB366D /* RichNotificationApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D9874142214761FF00CB366D /* RichNotificationWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98741652147620000CB366D /* Build configuration list for PBXNativeTarget "RichNotificationWatchApp" */;
+			buildPhases = (
+				D9874141214761FF00CB366D /* Resources */,
+				D98741642147620000CB366D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98741522147620000CB366D /* PBXTargetDependency */,
+			);
+			name = RichNotificationWatchApp;
+			productName = RichNotificationWatchApp;
+			productReference = D9874143214761FF00CB366D /* RichNotificationWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D987414E2147620000CB366D /* RichNotificationWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98741612147620000CB366D /* Build configuration list for PBXNativeTarget "RichNotificationWatchApp Extension" */;
+			buildPhases = (
+				D987414B2147620000CB366D /* Sources */,
+				D987414C2147620000CB366D /* Frameworks */,
+				D987414D2147620000CB366D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RichNotificationWatchApp Extension";
+			productName = "RichNotificationWatchApp Extension";
+			productReference = D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		D994083B21456362007A2A73 /* InteractiveNotifications */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D994084E21456364007A2A73 /* Build configuration list for PBXNativeTarget "InteractiveNotifications" */;
@@ -155,11 +373,14 @@
 				D994083921456362007A2A73 /* Frameworks */,
 				D994083A21456362007A2A73 /* Resources */,
 				D994086C2145720D007A2A73 /* Embed App Extensions */,
+				D9874140214761D500CB366D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				D99408672145720D007A2A73 /* PBXTargetDependency */,
+				D994087F21475A3E007A2A73 /* PBXTargetDependency */,
+				D987415F2147620000CB366D /* PBXTargetDependency */,
 			);
 			name = InteractiveNotifications;
 			productName = InteractiveNotifications;
@@ -183,6 +404,23 @@
 			productReference = D99408592145720D007A2A73 /* SuperNotificationExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		D994087321475A3D007A2A73 /* RichNotificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D994088121475A3E007A2A73 /* Build configuration list for PBXNativeTarget "RichNotificationExtension" */;
+			buildPhases = (
+				D994087021475A3D007A2A73 /* Sources */,
+				D994087121475A3D007A2A73 /* Frameworks */,
+				D994087221475A3D007A2A73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichNotificationExtension;
+			productName = RichNotificationExtension;
+			productReference = D994087421475A3D007A2A73 /* RichNotificationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,10 +431,22 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Austin Tooley";
 				TargetAttributes = {
+					D9874126214761D400CB366D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D9874142214761FF00CB366D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D987414E2147620000CB366D = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					D994083B21456362007A2A73 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 					D99408582145720D007A2A73 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D994087321475A3D007A2A73 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -216,11 +466,41 @@
 			targets = (
 				D994083B21456362007A2A73 /* InteractiveNotifications */,
 				D99408582145720D007A2A73 /* SuperNotificationExtension */,
+				D994087321475A3D007A2A73 /* RichNotificationExtension */,
+				D9874126214761D400CB366D /* RichNotificationApp Extension */,
+				D9874142214761FF00CB366D /* RichNotificationWatchApp */,
+				D987414E2147620000CB366D /* RichNotificationWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D9874125214761D400CB366D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9874133214761D500CB366D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9874141214761FF00CB366D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98741492147620000CB366D /* Assets.xcassets in Resources */,
+				D9874147214761FF00CB366D /* Interface.storyboard in Resources */,
+				D98741682147623100CB366D /* laser.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D987414D2147620000CB366D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D987415B2147620000CB366D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D994083A21456362007A2A73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,13 +515,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D994088521475BE7007A2A73 /* Assets.xcassets in Resources */,
 				D99408642145720D007A2A73 /* MainInterface.storyboard in Resources */,
+				D994088721475DDD007A2A73 /* laser.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D994087221475A3D007A2A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D994088421475BE6007A2A73 /* Assets.xcassets in Resources */,
+				D994087C21475A3E007A2A73 /* MainInterface.storyboard in Resources */,
+				D994088821475DDD007A2A73 /* laser.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D9874123214761D400CB366D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9874131214761D400CB366D /* NotificationController.swift in Sources */,
+				D987412F214761D400CB366D /* ExtensionDelegate.swift in Sources */,
+				D987412D214761D400CB366D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D987414B2147620000CB366D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98741592147620000CB366D /* NotificationController.swift in Sources */,
+				D98741572147620000CB366D /* ExtensionDelegate.swift in Sources */,
+				D98741552147620000CB366D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D994083821456362007A2A73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,17 +573,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D994087021475A3D007A2A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D994087921475A3E007A2A73 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D98741522147620000CB366D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D987414E2147620000CB366D /* RichNotificationWatchApp Extension */;
+			targetProxy = D98741512147620000CB366D /* PBXContainerItemProxy */;
+		};
+		D987415F2147620000CB366D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9874142214761FF00CB366D /* RichNotificationWatchApp */;
+			targetProxy = D987415E2147620000CB366D /* PBXContainerItemProxy */;
+		};
 		D99408672145720D007A2A73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D99408582145720D007A2A73 /* SuperNotificationExtension */;
 			targetProxy = D99408662145720D007A2A73 /* PBXContainerItemProxy */;
 		};
+		D994087F21475A3E007A2A73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D994087321475A3D007A2A73 /* RichNotificationExtension */;
+			targetProxy = D994087E21475A3E007A2A73 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D9874145214761FF00CB366D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9874146214761FF00CB366D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		D994084321456362007A2A73 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,9 +639,143 @@
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
+		D994087A21475A3E007A2A73 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D994087B21475A3E007A2A73 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D987413B214761D500CB366D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				INFOPLIST_FILE = "RichNotificationApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		D987413C214761D500CB366D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				INFOPLIST_FILE = "RichNotificationApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		D98741622147620000CB366D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				INFOPLIST_FILE = "RichNotificationWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		D98741632147620000CB366D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				INFOPLIST_FILE = "RichNotificationWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		D98741662147620000CB366D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				IBSC_MODULE = RichNotificationWatchApp_Extension;
+				INFOPLIST_FILE = RichNotificationWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		D98741672147620000CB366D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				IBSC_MODULE = RichNotificationWatchApp_Extension;
+				INFOPLIST_FILE = RichNotificationWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 		D994084C21456364007A2A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -491,9 +968,74 @@
 			};
 			name = Release;
 		};
+		D994088221475A3E007A2A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				INFOPLIST_FILE = RichNotificationExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.RichNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D994088321475A3E007A2A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
+				INFOPLIST_FILE = RichNotificationExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.RichNotificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D987413D214761D500CB366D /* Build configuration list for PBXNativeTarget "RichNotificationApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D987413B214761D500CB366D /* Debug */,
+				D987413C214761D500CB366D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98741612147620000CB366D /* Build configuration list for PBXNativeTarget "RichNotificationWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98741622147620000CB366D /* Debug */,
+				D98741632147620000CB366D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98741652147620000CB366D /* Build configuration list for PBXNativeTarget "RichNotificationWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98741662147620000CB366D /* Debug */,
+				D98741672147620000CB366D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D994083721456362007A2A73 /* Build configuration list for PBXProject "InteractiveNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -517,6 +1059,15 @@
 			buildConfigurations = (
 				D994086A2145720D007A2A73 /* Debug */,
 				D994086B2145720D007A2A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D994088121475A3E007A2A73 /* Build configuration list for PBXNativeTarget "RichNotificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D994088221475A3E007A2A73 /* Debug */,
+				D994088321475A3E007A2A73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

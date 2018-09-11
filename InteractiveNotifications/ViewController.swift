@@ -11,8 +11,6 @@ import UserNotifications
 
 class ViewController: UIViewController {
     
-    let actionPackedNotification = "actionPacked"
-    
     struct Notification {
         
         struct Category {
@@ -52,7 +50,7 @@ class ViewController: UIViewController {
         let actionCookDinner = UNNotificationAction(identifier: Notification.Action.cookDinner, title: "Cook Dinner", options: [.foreground])
         
         // Define notification category
-        let actionNotificationCategory = UNNotificationCategory(identifier: actionPackedNotification,
+        let actionNotificationCategory = UNNotificationCategory(identifier: Notification.Category.action,
                                                             actions: [actionHighFive, actionCookDinner, actionBuy],
                                                             intentIdentifiers: [],
                                                             options: [])
@@ -145,6 +143,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func actionNotification(_ sender: Any) {
-        sendNotification(content: createNotificationWithActions())
+        sendNotification(delay: 5, content: createNotificationWithActions())
     }
 }
