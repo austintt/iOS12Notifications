@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InteractiveNotifications" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Q-1a-jM6">
+                                <rect key="frame" x="122.5" y="347" width="130" height="52"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="61N-7y-LNw"/>
+                                    <constraint firstAttribute="width" constant="130" id="l3a-j8-d7T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Notification"/>
+                                <connections>
+                                    <action selector="standardNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gu-Ms-9sY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="m58-XR-Y4Z">
+                                <rect key="frame" x="122.5" y="427" width="130" height="52"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="JoL-QW-FJM"/>
+                                    <constraint firstAttribute="width" constant="130" id="kOt-Ma-tCH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Action Notification"/>
+                                <connections>
+                                    <action selector="actionNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSF-G5-k8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-6F-Yln">
+                                <rect key="frame" x="122.5" y="587" width="130" height="52"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="hc4-lX-Ayh"/>
+                                    <constraint firstAttribute="height" constant="52" id="rrz-UQ-FHT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Interactive Notification"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="suS-0h-n2e">
+                                <rect key="frame" x="122.5" y="507" width="130" height="52"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="6px-59-ozJ"/>
+                                    <constraint firstAttribute="width" constant="130" id="dua-tv-smR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Rich Notification"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="suS-0h-n2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0nE-fG-knN"/>
+                            <constraint firstItem="suS-0h-n2e" firstAttribute="top" secondItem="m58-XR-Y4Z" secondAttribute="bottom" constant="28" id="I4V-lT-Yaj"/>
+                            <constraint firstItem="Q4Q-1a-jM6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jiz-qZ-MwK"/>
+                            <constraint firstItem="XrJ-6F-Yln" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R2v-mN-sXk"/>
+                            <constraint firstItem="m58-XR-Y4Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zei-OS-tRi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XrJ-6F-Yln" secondAttribute="bottom" constant="28" id="iOf-uS-0eQ"/>
+                            <constraint firstItem="XrJ-6F-Yln" firstAttribute="top" secondItem="suS-0h-n2e" secondAttribute="bottom" constant="28" id="qla-Xe-8Tm"/>
+                            <constraint firstItem="m58-XR-Y4Z" firstAttribute="top" secondItem="Q4Q-1a-jM6" secondAttribute="bottom" constant="28" id="uCZ-Mb-uPY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
