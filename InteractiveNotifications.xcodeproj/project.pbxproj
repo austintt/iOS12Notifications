@@ -11,15 +11,6 @@
 		D987412F214761D400CB366D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987412E214761D400CB366D /* ExtensionDelegate.swift */; };
 		D9874131214761D400CB366D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9874130214761D400CB366D /* NotificationController.swift */; };
 		D9874133214761D500CB366D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9874132214761D500CB366D /* Assets.xcassets */; };
-		D9874147214761FF00CB366D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9874145214761FF00CB366D /* Interface.storyboard */; };
-		D98741492147620000CB366D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98741482147620000CB366D /* Assets.xcassets */; };
-		D98741502147620000CB366D /* RichNotificationWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D98741552147620000CB366D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98741542147620000CB366D /* InterfaceController.swift */; };
-		D98741572147620000CB366D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98741562147620000CB366D /* ExtensionDelegate.swift */; };
-		D98741592147620000CB366D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98741582147620000CB366D /* NotificationController.swift */; };
-		D987415B2147620000CB366D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D987415A2147620000CB366D /* Assets.xcassets */; };
-		D98741602147620000CB366D /* RichNotificationWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9874143214761FF00CB366D /* RichNotificationWatchApp.app */; };
-		D98741682147623100CB366D /* laser.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D994088621475DDD007A2A73 /* laser.mp4 */; };
 		D994084021456362007A2A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D994083F21456362007A2A73 /* AppDelegate.swift */; };
 		D994084221456362007A2A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D994084121456362007A2A73 /* ViewController.swift */; };
 		D994084521456362007A2A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D994084321456362007A2A73 /* Main.storyboard */; };
@@ -44,20 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D98741512147620000CB366D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D994083421456362007A2A73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D987414E2147620000CB366D;
-			remoteInfo = "RichNotificationWatchApp Extension";
-		};
-		D987415E2147620000CB366D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D994083421456362007A2A73 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9874142214761FF00CB366D;
-			remoteInfo = RichNotificationWatchApp;
-		};
 		D99408662145720D007A2A73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D994083421456362007A2A73 /* Project object */;
@@ -81,20 +58,8 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				D98741602147620000CB366D /* RichNotificationWatchApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D98741642147620000CB366D /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				D98741502147620000CB366D /* RichNotificationWatchApp Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D994086C2145720D007A2A73 /* Embed App Extensions */ = {
@@ -119,17 +84,7 @@
 		D9874132214761D500CB366D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9874134214761D500CB366D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9874135214761D500CB366D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		D9874143214761FF00CB366D /* RichNotificationWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichNotificationWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9874146214761FF00CB366D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		D98741482147620000CB366D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D987414A2147620000CB366D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RichNotificationWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D98741542147620000CB366D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		D98741562147620000CB366D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		D98741582147620000CB366D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		D987415A2147620000CB366D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D987415C2147620000CB366D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D987415D2147620000CB366D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		D994083C21456362007A2A73 /* InteractiveNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D994083F21456362007A2A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D994084121456362007A2A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,29 +163,6 @@
 			path = "RichNotificationApp Extension";
 			sourceTree = "<group>";
 		};
-		D9874144214761FF00CB366D /* RichNotificationWatchApp */ = {
-			isa = PBXGroup;
-			children = (
-				D9874145214761FF00CB366D /* Interface.storyboard */,
-				D98741482147620000CB366D /* Assets.xcassets */,
-				D987414A2147620000CB366D /* Info.plist */,
-			);
-			path = RichNotificationWatchApp;
-			sourceTree = "<group>";
-		};
-		D98741532147620000CB366D /* RichNotificationWatchApp Extension */ = {
-			isa = PBXGroup;
-			children = (
-				D98741542147620000CB366D /* InterfaceController.swift */,
-				D98741562147620000CB366D /* ExtensionDelegate.swift */,
-				D98741582147620000CB366D /* NotificationController.swift */,
-				D987415A2147620000CB366D /* Assets.xcassets */,
-				D987415C2147620000CB366D /* Info.plist */,
-				D987415D2147620000CB366D /* PushNotificationPayload.apns */,
-			);
-			path = "RichNotificationWatchApp Extension";
-			sourceTree = "<group>";
-		};
 		D994083321456362007A2A73 = {
 			isa = PBXGroup;
 			children = (
@@ -238,8 +170,6 @@
 				D994085F2145720D007A2A73 /* SuperNotificationExtension */,
 				D994087721475A3D007A2A73 /* RichNotificationExtension */,
 				D987412B214761D400CB366D /* RichNotificationApp Extension */,
-				D9874144214761FF00CB366D /* RichNotificationWatchApp */,
-				D98741532147620000CB366D /* RichNotificationWatchApp Extension */,
 				D994085A2145720D007A2A73 /* Frameworks */,
 				D994083D21456362007A2A73 /* Products */,
 			);
@@ -252,7 +182,6 @@
 				D99408592145720D007A2A73 /* SuperNotificationExtension.appex */,
 				D994087421475A3D007A2A73 /* RichNotificationExtension.appex */,
 				D9874127214761D400CB366D /* RichNotificationApp Extension.appex */,
-				D9874143214761FF00CB366D /* RichNotificationWatchApp.app */,
 				D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */,
 			);
 			name = Products;
@@ -331,23 +260,6 @@
 			productReference = D9874127214761D400CB366D /* RichNotificationApp Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		D9874142214761FF00CB366D /* RichNotificationWatchApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D98741652147620000CB366D /* Build configuration list for PBXNativeTarget "RichNotificationWatchApp" */;
-			buildPhases = (
-				D9874141214761FF00CB366D /* Resources */,
-				D98741642147620000CB366D /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D98741522147620000CB366D /* PBXTargetDependency */,
-			);
-			name = RichNotificationWatchApp;
-			productName = RichNotificationWatchApp;
-			productReference = D9874143214761FF00CB366D /* RichNotificationWatchApp.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
 		D987414E2147620000CB366D /* RichNotificationWatchApp Extension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D98741612147620000CB366D /* Build configuration list for PBXNativeTarget "RichNotificationWatchApp Extension" */;
@@ -380,7 +292,6 @@
 			dependencies = (
 				D99408672145720D007A2A73 /* PBXTargetDependency */,
 				D994087F21475A3E007A2A73 /* PBXTargetDependency */,
-				D987415F2147620000CB366D /* PBXTargetDependency */,
 			);
 			name = InteractiveNotifications;
 			productName = InteractiveNotifications;
@@ -434,9 +345,6 @@
 					D9874126214761D400CB366D = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					D9874142214761FF00CB366D = {
-						CreatedOnToolsVersion = 10.0;
-					};
 					D987414E2147620000CB366D = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -468,7 +376,6 @@
 				D99408582145720D007A2A73 /* SuperNotificationExtension */,
 				D994087321475A3D007A2A73 /* RichNotificationExtension */,
 				D9874126214761D400CB366D /* RichNotificationApp Extension */,
-				D9874142214761FF00CB366D /* RichNotificationWatchApp */,
 				D987414E2147620000CB366D /* RichNotificationWatchApp Extension */,
 			);
 		};
@@ -483,21 +390,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9874141214761FF00CB366D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D98741492147620000CB366D /* Assets.xcassets in Resources */,
-				D9874147214761FF00CB366D /* Interface.storyboard in Resources */,
-				D98741682147623100CB366D /* laser.mp4 in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D987414D2147620000CB366D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D987415B2147620000CB366D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,9 +444,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98741592147620000CB366D /* NotificationController.swift in Sources */,
-				D98741572147620000CB366D /* ExtensionDelegate.swift in Sources */,
-				D98741552147620000CB366D /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,16 +477,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D98741522147620000CB366D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D987414E2147620000CB366D /* RichNotificationWatchApp Extension */;
-			targetProxy = D98741512147620000CB366D /* PBXContainerItemProxy */;
-		};
-		D987415F2147620000CB366D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D9874142214761FF00CB366D /* RichNotificationWatchApp */;
-			targetProxy = D987415E2147620000CB366D /* PBXContainerItemProxy */;
-		};
 		D99408672145720D007A2A73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D99408582145720D007A2A73 /* SuperNotificationExtension */;
@@ -607,14 +490,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D9874145214761FF00CB366D /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9874146214761FF00CB366D /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		D994084321456362007A2A73 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -730,44 +605,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Release;
-		};
-		D98741662147620000CB366D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
-				IBSC_MODULE = RichNotificationWatchApp_Extension;
-				INFOPLIST_FILE = RichNotificationWatchApp/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
-			};
-			name = Debug;
-		};
-		D98741672147620000CB366D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5WNNJW9ZPQ;
-				IBSC_MODULE = RichNotificationWatchApp_Extension;
-				INFOPLIST_FILE = RichNotificationWatchApp/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tooley.InteractiveNotifications.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -1023,15 +860,6 @@
 			buildConfigurations = (
 				D98741622147620000CB366D /* Debug */,
 				D98741632147620000CB366D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D98741652147620000CB366D /* Build configuration list for PBXNativeTarget "RichNotificationWatchApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D98741662147620000CB366D /* Debug */,
-				D98741672147620000CB366D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
