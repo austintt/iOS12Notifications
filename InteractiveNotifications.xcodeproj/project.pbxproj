@@ -81,6 +81,7 @@
 		D9874127214761D400CB366D /* RichNotificationApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RichNotificationApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D987414F2147620000CB366D /* RichNotificationWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RichNotificationWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98741692148947200CB366D /* UIButton+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Style.swift"; sourceTree = "<group>"; };
+		D987416F2148996900CB366D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D994083C21456362007A2A73 /* InteractiveNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D994083F21456362007A2A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D994084121456362007A2A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,9 +150,10 @@
 		D994083321456362007A2A73 = {
 			isa = PBXGroup;
 			children = (
+				D987416F2148996900CB366D /* README.md */,
 				D994083E21456362007A2A73 /* InteractiveNotifications */,
-				D994085F2145720D007A2A73 /* SuperNotificationExtension */,
 				D994087721475A3D007A2A73 /* RichNotificationExtension */,
+				D994085F2145720D007A2A73 /* SuperNotificationExtension */,
 				D994085A2145720D007A2A73 /* Frameworks */,
 				D994083D21456362007A2A73 /* Products */,
 			);
