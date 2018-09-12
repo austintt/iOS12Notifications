@@ -13,7 +13,6 @@ import AVFoundation
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
 
-    @IBOutlet var label: UILabel?
     private var videoPlayer: AVPlayer?
     
     override func viewDidLoad() {
@@ -22,8 +21,6 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     }
     
     func didReceive(_ notification: UNNotification) {
-        self.label?.text = notification.request.content.body
-        
         playVideo("laser.mp4")
     }
 

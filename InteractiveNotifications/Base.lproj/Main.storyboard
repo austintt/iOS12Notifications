@@ -55,6 +55,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Interactive Notification"/>
+                                <connections>
+                                    <action selector="interactiveNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="un0-NT-H0q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="suS-0h-n2e">
                                 <rect key="frame" x="122.5" y="507" width="130" height="52"/>

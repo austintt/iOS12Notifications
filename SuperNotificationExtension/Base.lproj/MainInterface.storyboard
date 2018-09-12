@@ -12,37 +12,76 @@
         <!--Notification View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="SuperNotificationExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="SuperInteractiveNotificationViewController" customModule="SuperNotificationExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J02-1q-wzx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="mAr-3s-r6X"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hls-Jm-lKA">
+                                <rect key="frame" x="0.0" y="128" width="320" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-rq-ehL">
+                                        <rect key="frame" x="34" y="21" width="99" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="lNo-jq-BGp"/>
+                                        </constraints>
+                                        <state key="normal" title="Wizzard"/>
+                                        <connections>
+                                            <action selector="didWizard:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="HhO-5U-o3I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK2-XD-68F">
+                                        <rect key="frame" x="187" y="21" width="99" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="9YC-Vp-CWE"/>
+                                        </constraints>
+                                        <state key="normal" title="Bride"/>
+                                        <connections>
+                                            <action selector="didBride:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="UyE-ga-qRx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gSM-rq-ehL" firstAttribute="centerY" secondItem="hls-Jm-lKA" secondAttribute="centerY" id="6AA-NC-l7i"/>
+                                    <constraint firstItem="gSM-rq-ehL" firstAttribute="top" secondItem="hls-Jm-lKA" secondAttribute="top" constant="21" id="7kL-xg-3Yo"/>
+                                    <constraint firstItem="YK2-XD-68F" firstAttribute="top" secondItem="hls-Jm-lKA" secondAttribute="top" constant="21" id="BNA-Kl-75k"/>
+                                    <constraint firstItem="gSM-rq-ehL" firstAttribute="leading" secondItem="hls-Jm-lKA" secondAttribute="leading" constant="34" id="kkD-Ow-ocu"/>
+                                    <constraint firstAttribute="trailing" secondItem="YK2-XD-68F" secondAttribute="trailing" constant="34" id="nCv-JL-jQA"/>
+                                    <constraint firstItem="YK2-XD-68F" firstAttribute="centerY" secondItem="hls-Jm-lKA" secondAttribute="centerY" id="ysH-ca-cBW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" symbolic="YES" id="0Q0-KW-PJ6"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" symbolic="YES" id="6Vq-gs-PHe"/>
-                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" symbolic="YES" id="L8K-9R-egU"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" symbolic="YES" id="mYS-Cv-VNx"/>
+                            <constraint firstItem="J02-1q-wzx" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="Jco-Gx-rkd"/>
+                            <constraint firstItem="hls-Jm-lKA" firstAttribute="bottom" secondItem="2BE-c3-nQJ" secondAttribute="bottom" id="PNx-Qy-5M9"/>
+                            <constraint firstItem="hls-Jm-lKA" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="Zuh-9q-Vom"/>
+                            <constraint firstItem="hls-Jm-lKA" firstAttribute="top" secondItem="J02-1q-wzx" secondAttribute="bottom" id="aQU-2I-MrX"/>
+                            <constraint firstItem="hls-Jm-lKA" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="czZ-kt-UpL"/>
+                            <constraint firstItem="J02-1q-wzx" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="dJZ-XH-CBE"/>
+                            <constraint firstItem="J02-1q-wzx" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" id="g6N-a4-bMh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="37"/>
+                    <size key="freeformSize" width="320" height="200"/>
                     <connections>
-                        <outlet property="label" destination="GcN-lo-r42" id="lpW-cU-7IG"/>
+                        <outlet property="brideButton" destination="YK2-XD-68F" id="5Bu-0G-O3z"/>
+                        <outlet property="imageView" destination="J02-1q-wzx" id="BxL-8n-23W"/>
+                        <outlet property="wizzardButton" destination="gSM-rq-ehL" id="3nZ-D0-lCq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="140.80000000000001" y="133.13343328335833"/>
         </scene>
     </scenes>
 </document>

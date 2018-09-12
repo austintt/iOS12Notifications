@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         struct Category {
             static let normal = "normal"
             static let action = "actionPacked"
+            static let interactive = "🥑"
         }
         
         struct Action {
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         // Request Permission
         requestNotificationPermission()
         
+        /* Register a simple notification */
         // Create and register category (and actions)
         let normalCategory = UNNotificationCategory(identifier: Notification.Category.normal,
                                                                  actions: [],
@@ -58,6 +60,13 @@ class ViewController: UIViewController {
         // Register notification category
         UNUserNotificationCenter.current().setNotificationCategories([actionNotificationCategory])
         
+        /* Register an interactive notification */
+        let interactiveCategory = UNNotificationCategory(identifier: Notification.Category.interactive,
+                                                    actions: [],
+                                                    intentIdentifiers: [],
+                                                    options: [])
+        
+        UNUserNotificationCenter.current().setNotificationCategories([normalCategory])
         
     }
 
@@ -116,6 +125,25 @@ class ViewController: UIViewController {
         return content
     }
     
+    /*
+     An interactive notification.
+     */
+    func createInteractiveNotification() -> UNMutableNotificationContent {
+        
+        let content = UNMutableNotificationContent()
+        
+        // Set the ID
+        content.categoryIdentifier = Notification.Category.interactive
+        
+        // Set content
+        content.title = "✨Interactive✨"
+        content.subtitle = "wow"
+        content.body = "It's amazing!"
+        content.sound = UNNotificationSound.default
+        
+        return content
+    }
+    
     
     func sendNotification(delay: Int = 1, content: UNMutableNotificationContent) {
         // Check notification preferences
@@ -143,6 +171,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func actionNotification(_ sender: Any) {
-        sendNotification(delay: 5, content: createNotificationWithActions())
+        sendNotification(content: createNotificationWithActions())
+    }
+    
+    @IBAction func interactiveNotification(_ sender: Any) {
+        sendNotification(content: createInteractiveNotification())
     }
 }
